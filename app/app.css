@@ -32,19 +32,7 @@ h3 {
   text-overflow: ellipsis;
 }
 
-.text-overflow-4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 section:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-section:not:last-child {
   @apply mb-5
 }
 
@@ -69,12 +57,22 @@ section:not:last-child {
   animation-fill-mode: forwards;
 }
 
-.first-new-text-pointer {
-  @apply text-white py-0.5 rounded-2xl max-w-4/5
+.first-new {
+  @apply text-white py-0.5 rounded-2xl max-w-4/5 text-xl;
+  text-shadow: 0 0 4px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.7), 0 0 30px rgba(0,0,0,0.5);
 }
 
-.text-shadow-pointer {
-  text-shadow: 0 0 4px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.7), 0 0 30px rgba(0,0,0,0.5);
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
 }
 
 @keyframes stripe-animation{
@@ -83,14 +81,5 @@ section:not:last-child {
   }
   to {
     width: 100%;
-  }
-}
-
-@keyframes accordion-animation{
-  from {
-    grid-template-rows: 0fr;
-  }
-  to {
-    grid-template-rows: 1fr;
   }
 }

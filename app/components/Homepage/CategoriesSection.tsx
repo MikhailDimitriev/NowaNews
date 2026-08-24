@@ -1,6 +1,6 @@
-import HomepageCategoryCard from "~/components/HomepageCategoryCard";
+import HomepageCategoryCard from "~/components/Homepage/HomepageCategoryCard";
 import { charCapitalize } from "~/utils/charCapitalize";
-import type { ArticleStructure } from "../../types/global";
+import type { ArticleStructure } from "../../../types/global";
 import {Link} from "react-router";
 import {categoryChecker} from "~/utils/categoryChecker";
 
@@ -13,6 +13,7 @@ const CategoriesSection = ( {articles, category}: {category: 'ai' | 'business' |
             className="text-center h-7 w-7 xl:h-9 xl:w-9"
             src={categoryChecker(category)}
             width="36"
+            alt=""
           />
           <h2 className="text-[clamp(24px,1.6vw,30px)]">
             {category === 'ai' ? category.toUpperCase() : charCapitalize(category)}

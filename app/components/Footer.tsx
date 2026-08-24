@@ -7,8 +7,6 @@ const Footer = () => {
   const [isOpenNavigation, setIsOpenNavigation] = useState(false)
   const [isOpenInformation, setIsOpenInformation] = useState(false)
 
-  console.log(isOpenNavigation)
-
   return (
     <footer className="p-[1.5rem_1.5rem_0.5rem] lg:p-[2rem_3.5rem_0.5rem] xl:p-[3rem_6rem_0.5rem] text-gray-500 flex flex-col items-center text-[14px]">
       <div className="hidden md:grid grid-cols-4 gap-4 lg:gap-8 ">
