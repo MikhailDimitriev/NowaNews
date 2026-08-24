@@ -28,6 +28,25 @@ declare global {
   interface NewsContextType {
     timeConverter: (article: ArticleStructure) => string
   }
+
+  interface useNewsStoreType {
+    newsList: ArticleStructure[],
+    firstNews: ArticleStructure | undefined,
+    isLoading: boolean,
+    errorMessage: string,
+
+    newsFetch: () => void
+  }
+
+  interface useNewsCategoriesStoreType {
+    categoryAi: ArticleStructure[],
+    categoryBusiness: ArticleStructure[],
+    categoryCulture: ArticleStructure[],
+    categoryEntertainment: ArticleStructure[],
+    categoryHealth: ArticleStructure[],
+
+    categoryFetch: (category: string, limit: number) => void,
+  }
 }
 
-export { ArticleStructure, DataFetch, Article, FirstArticle, NewsContextType }
+export { ArticleStructure, DataFetch, Article, FirstArticle, NewsContextType, useNewsStoreType, useNewsCategoriesStoreType }

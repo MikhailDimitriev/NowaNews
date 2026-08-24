@@ -7,7 +7,7 @@
 
 html,
 body {
-  @apply bg-gray-100 dark:bg-gray-950;
+  @apply bg-gray-100 dark:bg-gray-900;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -15,8 +15,8 @@ body {
 }
 
 h3 {
+  @apply dark:text-white ;
   font-size: 16px;
-  color: black;
   font-weight: bold;
 }
 
@@ -73,6 +73,10 @@ section:not(:last-child) {
   clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
+}
+
+.dark-mode-bg-alt {
+  @apply dark:bg-gray-800
 }
 
 @keyframes stripe-animation{

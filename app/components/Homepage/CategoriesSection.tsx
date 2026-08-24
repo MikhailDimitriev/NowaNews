@@ -6,7 +6,7 @@ import {categoryChecker} from "~/utils/categoryChecker";
 
 const CategoriesSection = ( {articles, category}: {category: 'ai' | 'business' | 'culture' | 'entertainment' | 'health', articles: ArticleStructure[]} ) => {
   return (
-    <section className="bg-white inline-padding py-4 xl:py-6">
+    <section className="dark-mode-bg-alt bg-white inline-padding py-4 xl:py-6">
       <div className="flex items-center justify-between mb-2 xl:mb-4 font-semibold">
         <div className="flex gap-2 items-center">
           <img

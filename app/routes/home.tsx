@@ -2,8 +2,6 @@ import type { Route } from "./+types/home";
 import HeroSection from "~/components/Homepage/HeroSection";
 import CategoriesBody from "~/components/Homepage/CategoriesBody";
 
-export const BASE_URL = `https://noozra.com/api`
-
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "NowaNews" },

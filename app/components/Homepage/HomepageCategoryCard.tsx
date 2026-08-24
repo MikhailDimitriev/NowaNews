@@ -25,7 +25,7 @@ const HomepageCategoryCard = ( { article }: { article: ArticleStructure } ) => {
           <h3 className="font-semibold text-[clamp(1rem,0.96vw,1.125rem) text-overflow-3">
             {article.headline}
           </h3>
-          <p>{publishedAt}</p>
+          <p className="text-gray-500">{publishedAt}</p>
         </div>
       </Link>
     </article>

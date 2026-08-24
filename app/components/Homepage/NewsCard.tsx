@@ -31,7 +31,7 @@ const NewsCard = (props: Article) => {
             height="120"
             loading="lazy"
           />
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 justify-between ">
             <h3 className="font-semibold text-[clamp(1rem,0.96vw,1.125rem) max-h-2/3 text-overflow-3">{article.headline}</h3>
             <p className="hidden lg:block text-gray-500">{publishedAt}</p>
           </div>
