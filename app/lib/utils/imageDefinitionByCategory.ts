@@ -1,4 +1,6 @@
-export function categoryChecker(category: 'ai' | 'business' | 'culture' | 'entertainment' | 'health') {
+import type {CategoriesUnions} from "~/components/Homepage/types";
+
+export function imageDefinitionByCategory(category: CategoriesUnions) {
   switch (category) {
     case "ai":
       return '/brain.png'

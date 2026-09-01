@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import HeroSection from "~/components/Homepage/HeroSection";
-import CategoriesBody from "~/components/Homepage/CategoriesBody";
+import CategoriesUnification from "~/components/Homepage/CategoriesUnification";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -16,7 +16,7 @@ export default function Home() {
       <main className="xl:mt-8 lg:mt-6 mt-4">
         <h1 className="visually-hidden">NowaNews</h1>
         <HeroSection />
-        <CategoriesBody />
+        <CategoriesUnification />
       </main>
     </>
   );

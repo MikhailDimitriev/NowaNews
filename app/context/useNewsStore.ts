@@ -1,29 +1,40 @@
 import {create} from "zustand";
-import { BASE_URL } from "~/config/api";
-import type { useNewsStoreType } from "../../types/global";
+import {
+  type ArticleStructureDTO,
+} from "~/lib/api/types";
+import {getAllCategoriesArticles} from "~/lib/api/getAllCategoriesArticles";
 
+interface useNewsStoreStructure {
+  newsList: ArticleStructureDTO[],
+  firstNews: ArticleStructureDTO,
+  isLoading: boolean,
+  errorMessage: string,
 
-export const useNewsStore = create<useNewsStoreType>((set) => ({
+  newsFetch: () => void
+}
+
+export const useNewsStore = create<useNewsStoreStructure>((set) => ({
   newsList: [],
-  firstNews: undefined,
+  firstNews: {
+    id: "",
+    title: "",
+    src: "",
+    publishedAt: "",
+    category: "",
+    description: "",
+    imageUrl: ""
+  },
   isLoading: false,
   errorMessage: '',
 
   newsFetch: async () => {
     set({isLoading: true, errorMessage: ''})
     try {
-      const response = await fetch(`${BASE_URL}/articles?limit=5`, {method: "GET"})
+      const fetchedDataDTO = await getAllCategoriesArticles()
 
-      if (!response.ok) throw new Error("Failed to fetch data.")
+      const [first, ...rest] = fetchedDataDTO
+      set({firstNews: first, newsList: rest})
 
-      const fetchedArticles: DataFetch = await response.json()
-
-      if (fetchedArticles.articles.length > 0) {
-        const [first, ...rest] = fetchedArticles.articles
-        set({firstNews: first, newsList: rest})
-      } else {
-        set({newsList: []})
-      }
     } catch (error) {
       set({errorMessage: "Something went wrong. Please try again later."})
     } finally {
