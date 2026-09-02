@@ -1,9 +1,9 @@
 import React from 'react';
 import NewsCard from "~/components/Homepage/NewsCard";
-import {useNewsStore} from "~/context/useNewsStore";
+import {useNewsListStore} from "~/context/useNewsListStore";
 
 const NewsList = () => {
-  const { newsList } = useNewsStore()
+  const { newsList } = useNewsListStore()
 
   return (
     <ul className="flex flex-row lg:flex-col overflow-x-auto snap-x snap-proximity">

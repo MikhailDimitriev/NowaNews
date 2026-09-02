@@ -1,11 +1,15 @@
-import Navigation from "~/components/Navigation";
+import CategoryPage from "~/components/CategoriesPages/CategoryPage";
+import {
+  useNewsByCategoryEntertainmentStore
+} from "~/context/CategoriesStores/useNewsByCategoryEntertainmentStore";
 
-const CategoryAi = () => {
+const CategoryEntertainment = () => {
   return (
-    <div>
-
-    </div>
+    <CategoryPage
+      store={useNewsByCategoryEntertainmentStore}
+      category={"entertainment"}
+    />
   );
 };
 
-export default CategoryAi;
+export default CategoryEntertainment;

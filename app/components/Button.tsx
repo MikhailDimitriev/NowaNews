@@ -13,7 +13,7 @@ const Button = (props: ButtonProps) => {
 
   return (
     <button
-      className="bg-pink-400 p-3 rounded-2xl text-white w-1/2 hover:opacity-70 hover:bg-pink-600 self-center md:self-auto"
+      className="bg-pink-400 p-3 rounded-2xl text-white hover:opacity-70 hover:bg-pink-600 self-center md:self-auto"
       type={type}
       {...restProps}
     >

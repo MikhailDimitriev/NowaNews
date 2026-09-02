@@ -1,10 +1,10 @@
-import FirstNewsItem from "~/components/Homepage/FirstNewsItem";
+import FirstNewsCard from "~/components/Homepage/FirstNewsCard";
 import { useEffect } from "react";
-import { useNewsStore } from "~/context/useNewsStore";
+import { useNewsListStore } from "~/context/useNewsListStore";
 import NewsList from "~/components/Homepage/NewsList";
 
 const HeroSection = () => {
-  const { firstNews, isLoading, errorMessage, newsFetch } = useNewsStore()
+  const { firstNews, isLoading, errorMessage, newsFetch } = useNewsListStore()
 
   useEffect(() => {
     newsFetch()
@@ -26,7 +26,7 @@ const HeroSection = () => {
         <p className="text-3xl p-10">{errorMessage}</p>
       ) : (
         <div className="flex flex-col lg:flex-row justify-between 2xl:gap-10 xl:gap-8 gap-6">
-          <FirstNewsItem
+          <FirstNewsCard
             imageUrl={firstNews.imageUrl}
             src={firstNews.src}
             title={firstNews.title}

@@ -1,12 +1,12 @@
 import NewsSectionByCategory from "~/components/Homepage/NewsSectionByCategory";
 import React, { useEffect } from "react";
-import {useNewsCategoriesStore} from "~/context/CategoriesStores/useNewsCategoriesStore";
+import {useNewsAllCategoriesStore} from "~/context/useNewsAllCategoriesStore";
 
 const CategoriesUnification = () => {
-  const { categoryAi, categoryBusiness, categoryCulture, categoryEntertainment, categoryHealth, categoryFetch } = useNewsCategoriesStore()
+  const { categoryAi, categoryBusiness, categoryCulture, categoryEntertainment, categoryHealth, categoryFetch } = useNewsAllCategoriesStore()
 
-  // const { newsList: aiNewsList, newsFetch: aiNewsFetch } = useCategoryAiStore()
-  // const { newsList: businessNewsList } = useCategoryBusinessStore()
+  // const { newsList: aiNewsList, newsFetch: aiNewsFetch } = useNewsByCategoryAiStore()
+  // const { newsList: businessNewsList } = useNewsByCategoryBusinessStore()
 
   useEffect(() => {
     categoryFetch('ai', 2)

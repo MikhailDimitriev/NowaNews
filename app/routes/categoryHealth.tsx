@@ -1,11 +1,15 @@
-import Navigation from "~/components/Navigation";
+import CategoryPage from "~/components/CategoriesPages/CategoryPage";
+import {
+  useNewsByCategoryHealthStore
+} from "~/context/CategoriesStores/useNewsByCategoryHealthStore";
 
-const CategoryAi = () => {
+const CategoryHealth = () => {
   return (
-    <div>
-
-    </div>
+    <CategoryPage
+      store={useNewsByCategoryHealthStore}
+      category={"health"}
+    />
   );
 };
 
-export default CategoryAi;
+export default CategoryHealth;

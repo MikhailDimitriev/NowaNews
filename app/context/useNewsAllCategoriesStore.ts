@@ -15,7 +15,7 @@ interface useNewsCategoriesStoreStructure {
   categoryFetch: (category: CategoriesUnions, limit: number) => void,
 }
 
-export const useNewsCategoriesStore = create<useNewsCategoriesStoreStructure>((set) => ({
+export const useNewsAllCategoriesStore = create<useNewsCategoriesStoreStructure>((set) => ({
   categoryAi: [],
   categoryBusiness: [],
   categoryCulture: [],

@@ -13,7 +13,7 @@ interface useNewsStoreStructure {
   newsFetch: () => void
 }
 
-export const useNewsStore = create<useNewsStoreStructure>((set) => ({
+export const useNewsListStore = create<useNewsStoreStructure>((set) => ({
   newsList: [],
   firstNews: {
     id: "",
@@ -31,7 +31,6 @@ export const useNewsStore = create<useNewsStoreStructure>((set) => ({
     set({isLoading: true, errorMessage: ''})
     try {
       const fetchedDataDTO = await getAllCategoriesArticles()
-
       const [first, ...rest] = fetchedDataDTO
       set({firstNews: first, newsList: rest})
 

@@ -7,4 +7,13 @@ export interface NewsCardProps {
   category?: string,
 }
 
+export interface FirstNewsCardStructure extends NewsCardProps {
+  description: string;
+  category: string,
+}
+
+export interface SingleNewsCard extends NewsCardProps {
+  description: string;
+}
+
 export type CategoriesUnions = 'ai' | 'business' | 'culture' | 'entertainment' | 'health'

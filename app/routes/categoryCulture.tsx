@@ -1,11 +1,15 @@
-import Navigation from "~/components/Navigation";
+import CategoryPage from "~/components/CategoriesPages/CategoryPage";
+import {
+  useNewsByCategoryCultureStore
+} from "~/context/CategoriesStores/useNewsByCategoryCultureStore";
 
-const CategoryAi = () => {
+const CategoryCulture = () => {
   return (
-    <div>
-
-    </div>
+    <CategoryPage
+      store={useNewsByCategoryCultureStore}
+      category={"culture"}
+    />
   );
 };
 
-export default CategoryAi;
+export default CategoryCulture;

@@ -15,6 +15,9 @@ const FooterFormElement = () => {
       />
       <Button
         type="submit"
+        style={{
+          width: "50%",
+        }}
       >
         Subscribe
       </Button>
