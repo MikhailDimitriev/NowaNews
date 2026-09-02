@@ -3,7 +3,7 @@ import {
   useNewsByCategoryEntertainmentStore
 } from "~/context/CategoriesStores/useNewsByCategoryEntertainmentStore";
 
-const CategoryEntertainment = () => {
+const EntertainmentCategoryPage = () => {
   return (
     <CategoryPage
       store={useNewsByCategoryEntertainmentStore}
@@ -12,4 +12,4 @@ const CategoryEntertainment = () => {
   );
 };
 
-export default CategoryEntertainment;
+export default EntertainmentCategoryPage;

@@ -3,7 +3,7 @@ import {
   useNewsByCategoryCultureStore
 } from "~/context/CategoriesStores/useNewsByCategoryCultureStore";
 
-const CategoryCulture = () => {
+const CultureCategoryPage = () => {
   return (
     <CategoryPage
       store={useNewsByCategoryCultureStore}
@@ -12,4 +12,4 @@ const CategoryCulture = () => {
   );
 };
 
-export default CategoryCulture;
+export default CultureCategoryPage;

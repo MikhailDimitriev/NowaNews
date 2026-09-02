@@ -3,7 +3,7 @@ import {
   useNewsByCategoryAiStore
 } from "~/context/CategoriesStores/useNewsByCategoryAiStore";
 
-const CategoryAi = () => {
+const AiCategoryPage = () => {
 
   return (
     <CategoryPage
@@ -13,4 +13,4 @@ const CategoryAi = () => {
   );
 };
 
-export default CategoryAi;
+export default AiCategoryPage;

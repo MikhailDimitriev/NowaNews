@@ -3,7 +3,7 @@ import {
   useNewsByCategoryHealthStore
 } from "~/context/CategoriesStores/useNewsByCategoryHealthStore";
 
-const CategoryHealth = () => {
+const HealthCategoryPage = () => {
   return (
     <CategoryPage
       store={useNewsByCategoryHealthStore}
@@ -12,4 +12,4 @@ const CategoryHealth = () => {
   );
 };
 
-export default CategoryHealth;
+export default HealthCategoryPage;
