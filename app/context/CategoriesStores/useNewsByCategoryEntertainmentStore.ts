@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import type { NewsStore } from "./types";
 import {getArticlesByCategory} from "~/lib/api/getArticlesByCategory";
-import type {CategoriesUnions} from "~/components/Homepage/types";
+import type {CategoriesUnions} from "~/config/categoriesList";
 
 export const useNewsByCategoryEntertainmentStore = create<NewsStore>((set) => ({
   newsList: [],

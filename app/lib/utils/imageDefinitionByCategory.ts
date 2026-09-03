@@ -1,4 +1,5 @@
-import type {CategoriesUnions} from "~/components/Homepage/types";
+import type {CategoriesUnions} from "~/config/categoriesList";
+
 
 export function imageDefinitionByCategory(category: CategoriesUnions) {
   switch (category) {

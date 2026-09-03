@@ -76,7 +76,7 @@ Rules:
 - Use route params and splats according to the declarative routing docs.
 - Do not add route object loaders/actions to a Declarative router.
 
-## Navigation
+## HeaderNavigation
 
 Before changing navigation, read:
 

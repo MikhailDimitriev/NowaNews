@@ -14,8 +14,6 @@ const NewsList = () => {
           title={article.title}
           publishedAt={article.publishedAt}
           key={article.id}
-          description={""}
-          category={""}
         />
       ))}
     </ul>

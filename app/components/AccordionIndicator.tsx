@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FooterAccordionIndicator = ({state}: {state:boolean}) => {
+const AccordionIndicator = ({state}: {state:boolean}) => {
   return (
     <span
       style={{
@@ -12,4 +12,4 @@ const FooterAccordionIndicator = ({state}: {state:boolean}) => {
   );
 };
 
-export default FooterAccordionIndicator;
+export default AccordionIndicator;

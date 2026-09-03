@@ -125,7 +125,7 @@ Rules of thumb:
 - Mutation that should keep the user on the same page: `useFetcher` / `<fetcher.Form>`.
 - Optimistic UI: derive from `fetcher.formData` or `navigation.formData`.
 
-## Navigation and URL State
+## HeaderNavigation and URL State
 
 Before changing navigation or search params, read:
 

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import {Link} from "react-router";
-import type {NewsCardProps} from "./types";
+import type { HomepageNewsCardProps } from "./types";
+import {checkIfImageLoaded} from "~/lib/utils/checkIfImageLoaded";
 
-const NewsCard = ({ src, imageUrl, title, publishedAt }: NewsCardProps) => {
+const NewsCard = ({ src, imageUrl, title, publishedAt }: HomepageNewsCardProps) => {
   const [imageLoaded, setImageLoaded] = useState(false)
 
   return (
@@ -15,7 +16,7 @@ const NewsCard = ({ src, imageUrl, title, publishedAt }: NewsCardProps) => {
             onLoad={() => setImageLoaded(true)}
             onError={() => setImageLoaded(false)}
             className="object-cover aspect-square rounded-2xl h-30"
-            src={imageLoaded ? `${imageUrl}` : `https://testonjob.ru/wp-content/uploads/2020/04/analiz-informacii-test-min-1024x597.png`}
+            src={checkIfImageLoaded(imageLoaded, imageUrl)}
             alt="News image"
             width="120"
             height="120"
