@@ -3,7 +3,7 @@ import {Link} from "react-router";
 import type {HomepageNewsCardProps} from "./types";
 import {checkIfImageLoaded} from "~/lib/utils/checkIfImageLoaded";
 
-const HomepageNewsCategoryCard = ({ src, imageUrl, title, publishedAt }: HomepageNewsCardProps ) => {
+const NewsCategoryCard = ({ src, imageUrl, title, publishedAt }: HomepageNewsCardProps ) => {
   const [imageLoaded, setImageLoaded] = useState(false)
 
   return (
@@ -28,4 +28,4 @@ const HomepageNewsCategoryCard = ({ src, imageUrl, title, publishedAt }: Homepag
   );
 };
 
-export default HomepageNewsCategoryCard;
+export default NewsCategoryCard;

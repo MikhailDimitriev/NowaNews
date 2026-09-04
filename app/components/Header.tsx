@@ -1,20 +1,27 @@
 import HeaderNavigation from "~/components/HeaderNavigation";
 import Logo from "~/components/Logo";
 import {useState} from "react";
-import HeaderHiddenMobileAbove from "~/components/HeaderHiddenMobileAbove";
-import SearchItem from "~/components/SearchItem";
+import HeaderMobile from "~/components/HeaderMobile";
+import Search from "~/components/SearchComponents/Search";
+import {useLocation} from "react-router";
+import type {CategoriesUnions} from "~/config/categoriesList";
 
 const Header = () => {
   const [burgerMenuClick, setBurgerMenuClick] = useState(false)
 
+  const location = useLocation()
+  const currentPath = location.pathname
+
+  const category = currentPath.split('').slice(10).join('') as CategoriesUnions
+
   return (
-    <header className={`dark-mode-bg-alt bg-white shadow-sm px-12 py-4 xl:py-2`}>
+    <header className="inline-padding dark-mode-bg-alt bg-white shadow-sm py-4 xl:py-2">
       <div className="flex justify-between items-center gap-4">
         <Logo />
         <HeaderNavigation position='header' />
         <div className="flex flex-row items-center gap-12">
 
-          <SearchItem />
+          <Search category={category}/>
 
           <button
             className="lg:hidden text-[36px]"
@@ -27,7 +34,7 @@ const Header = () => {
         </div>
       </div>
 
-      <HeaderHiddenMobileAbove state={burgerMenuClick} />
+      <HeaderMobile state={burgerMenuClick} />
     </header>
   );
 };

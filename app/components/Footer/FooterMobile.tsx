@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import FooterDescription from "~/components/Footer/FooterDescription";
 import AccordionElement from "~/components/AccordionElement";
-import FooterFormElement from "~/components/Footer/FooterFormElement";
+import FooterForm from "~/components/Footer/FooterForm";
 import FooterNavigationList from "~/components/Footer/FooterNavigationList";
 import {NAVIGATION_LINKS, STATIC_LINKS} from "~/config/navigationsLinks";
 
-const FooterHiddenMobileAbove = () => {
+const FooterMobile = () => {
   const [isOpenNavigation, setIsOpenNavigation] = useState(false)
   const [isOpenInformation, setIsOpenInformation] = useState(false)
 
@@ -29,9 +29,9 @@ const FooterHiddenMobileAbove = () => {
         <FooterNavigationList linksArray={STATIC_LINKS} />
       </AccordionElement>
 
-      <FooterFormElement />
+      <FooterForm />
     </div>
   );
 };
 
-export default FooterHiddenMobileAbove;
+export default FooterMobile;

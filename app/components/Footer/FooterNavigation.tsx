@@ -3,7 +3,7 @@ import FooterNavigationList, {
   type FooterLinkObjectStructure,
 } from "~/components/Footer/FooterNavigationList";
 
-const FooterNavigationElement = ({links, title}: {links: FooterLinkObjectStructure[], title: string}) => {
+const FooterNavigation = ({links, title}: {links: FooterLinkObjectStructure[], title: string}) => {
   return (
     <div>
       <h3 className="mb-2 font-semibold text-black text-[16px]">{title}</h3>
@@ -12,4 +12,4 @@ const FooterNavigationElement = ({links, title}: {links: FooterLinkObjectStructu
   );
 };
 
-export default FooterNavigationElement;
+export default FooterNavigation;

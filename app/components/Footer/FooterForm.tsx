@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from "~/components/Button";
 
-const FooterFormElement = () => {
+const FooterForm = () => {
   return (
     <form className="flex flex-col gap-4 items-start">
       <h3 className="font-semibold text-black text-[16px] p-1">Subscribe to news</h3>
@@ -25,4 +25,4 @@ const FooterFormElement = () => {
   );
 };
 
-export default FooterFormElement;
+export default FooterForm;

@@ -1,13 +1,13 @@
 import React from 'react';
-import HomepageNewsCategoryCard
-  from "~/components/Homepage/HomepageNewsCategoryCard";
+import NewsCategoryCard
+  from "~/components/Homepage/NewsCategoryCard";
 import type {ArticleStructureDTO} from "~/lib/api/types";
 
-const NewsListByCategory = ({ articles }: {articles: ArticleStructureDTO[]}) => {
+const NewsCategoryList = ({ articles }: {articles: ArticleStructureDTO[]}) => {
   return (
     <div className="flex flex-col lg:flex-row gap-8 xl:gap-12 2xl:gap-24">
       {articles.map((article) => (
-        <HomepageNewsCategoryCard
+        <NewsCategoryCard
           key={article.id}
           src={article.src}
           imageUrl={article.imageUrl}
@@ -19,4 +19,4 @@ const NewsListByCategory = ({ articles }: {articles: ArticleStructureDTO[]}) => 
   );
 };
 
-export default NewsListByCategory;
+export default NewsCategoryList;

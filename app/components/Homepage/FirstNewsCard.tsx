@@ -1,5 +1,5 @@
 import { useSingleNews } from "~/hooks/useSingleNews";
-import MoveToSourceLink from "~/components/MoveToSourceLink";
+import OpenOriginalLink from "~/components/OpenOriginalLink";
 import {
   checkIfBackgroundImageLoaded
 } from "~/lib/utils/checkIfBackgroundImageLoaded";
@@ -21,7 +21,7 @@ const FirstNewsCard = () => {
       <p className="large-news-text max-w-4/5 text-overflow-3 text-xl">{description}</p>
       <div className="w-full flex justify-between items-center">
         <p className="large-news-text max-w-4/5 text-xl">{publishedAt}</p>
-        <MoveToSourceLink src={src} />
+        <OpenOriginalLink src={src} />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import {capitalizeFirstLetter} from "~/lib/utils/capitalizeFirstLetter";
 import {Link} from "react-router";
 import type {CategoriesUnions} from "~/config/categoriesList";
 
-const NewsSectionByCategoryHeader = ({ category }: {category: CategoriesUnions}) => {
+const NewsCategorySectionHeader = ({ category }: {category: CategoriesUnions}) => {
   return (
     <div className="flex items-center justify-between mb-2 xl:mb-4 font-semibold">
       <div className="flex gap-2 items-center">
@@ -28,4 +28,4 @@ const NewsSectionByCategoryHeader = ({ category }: {category: CategoriesUnions})
   );
 };
 
-export default NewsSectionByCategoryHeader;
+export default NewsCategorySectionHeader;

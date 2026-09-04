@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router";
 
-const MoveToSourceLink = ({ src }: {src: string}) => {
+const OpenOriginalLink = ({ src }: {src: string}) => {
   return (
     <div className="flex items-center text-white bg-pink-400 p-3 rounded-2xl hover:opacity-90 gap-2 self-end">
       <Link to={src} target="_blank">Open original</Link>
@@ -12,4 +12,4 @@ const MoveToSourceLink = ({ src }: {src: string}) => {
   );
 };
 
-export default MoveToSourceLink;
+export default OpenOriginalLink;

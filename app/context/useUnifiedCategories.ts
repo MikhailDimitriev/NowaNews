@@ -13,14 +13,14 @@ export const useUnifiedCategories = (limit: number) => {
       return {category: categoryItem.category, newsFetch: categoryItem.storeName(state => state.newsFetch)}
     })
 
-  const useAllCategoriesFetch = (limit: number)=> {
+  const useAllCategoriesFetch = ()=> {
     allCategoriesFetchFunctions.forEach((categoryItem) => {
       categoryItem.newsFetch(categoryItem.category, limit)
     })
   }
 
   useEffect(() => {
-    useAllCategoriesFetch(limit)
+    useAllCategoriesFetch()
   }, []);
 
   return allCategoriesNewsList

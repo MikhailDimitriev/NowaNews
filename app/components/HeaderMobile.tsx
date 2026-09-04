@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderNavigation from "~/components/HeaderNavigation";
 
-const HeaderHiddenMobileAbove = ({state}: {state: boolean} ) => {
+const HeaderMobile = ({state}: {state: boolean} ) => {
   return (
     <div
       className="lg:hidden"
@@ -16,4 +16,4 @@ const HeaderHiddenMobileAbove = ({state}: {state: boolean} ) => {
   );
 };
 
-export default HeaderHiddenMobileAbove;
+export default HeaderMobile;
