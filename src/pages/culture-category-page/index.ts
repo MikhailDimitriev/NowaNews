@@ -1,0 +1,1 @@
+export {default as CultureCategoryPage} from './ui/CultureCategoryPage'

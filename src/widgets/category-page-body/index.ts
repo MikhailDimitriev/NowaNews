@@ -1,0 +1,1 @@
+export {default as CategoryPageBody} from './ui/CategoryPageBody'

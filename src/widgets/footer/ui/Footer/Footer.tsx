@@ -1,0 +1,17 @@
+import FooterMobileAbove from "~/widgets/footer/ui/FooterMobileAbove";
+import FooterMobile from "~/widgets/footer/ui/FooterMobile";
+
+const Footer = () => {
+
+  return (
+    <footer className="p-[1.5rem_1.5rem_0.5rem] lg:p-[2rem_3.5rem_0.5rem] xl:p-[3rem_6rem_0.5rem] text-gray-500 flex flex-col items-center text-[14px]">
+      <FooterMobileAbove />
+
+      <FooterMobile />
+
+      <div className="mt-4">©2026 NowaNews. All rights reserved.</div>
+    </footer>
+  );
+};
+
+export default Footer;

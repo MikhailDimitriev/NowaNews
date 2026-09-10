@@ -1,0 +1,1 @@
+export {default as EntertainmentCategoryPage} from './ui/EntertainmentCategoryPage'

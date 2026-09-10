@@ -1,0 +1,1 @@
+export {default as SearchedNewsBody} from './ui/SearchedNewsBody'

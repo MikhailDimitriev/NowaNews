@@ -1,0 +1,1 @@
+export {default as NewsCategorySectionHeader} from './ui/NewsCategorySectionHeader'

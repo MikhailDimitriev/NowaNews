@@ -1,0 +1,1 @@
+export {default as AiCategoryPage} from './ui/AiCategoryPage'

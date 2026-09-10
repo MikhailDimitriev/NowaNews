@@ -1,0 +1,1 @@
+export {default as HealthCategoryPage} from './ui/HealthCategoryPage'
