@@ -1,16 +1,21 @@
 import type {Categories} from "~/entities/article";
+import aiIcon from '/src/shared/assets/icons/brain.png'
+import businessIcon from '/src/shared/assets/icons/brain.png'
+import cultureIcon from '/src/shared/assets/icons/brain.png'
+import entertainmentIcon from '/src/shared/assets/icons/brain.png'
+import healthIcon from '/src/shared/assets/icons/brain.png'
 
 export function imageDefinitionByCategory(category: Categories) {
   switch (category) {
     case "ai":
-      return '/src/shared/assets/icons/brain.png'
+      return aiIcon
     case "business":
-      return '/src/shared/assets/icons/business.png'
+      return businessIcon
     case "culture":
-      return '/src/shared/assets/icons/culture.png'
+      return cultureIcon
     case "entertainment":
-      return '/src/shared/assets/icons/entertainment.png'
+      return entertainmentIcon
     case "health":
-      return '/src/shared/assets/icons/health.png'
+      return healthIcon
   }
 }

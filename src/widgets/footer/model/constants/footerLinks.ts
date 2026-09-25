@@ -1,3 +1,7 @@
+import twitterIcon from '/src/shared/assets/icons/twitter.svg'
+import tiktokIcon from '/src/shared/assets/icons/tiktok.svg'
+import youtubeIcon from '/src/shared/assets/icons/youtube.svg'
+
 export const NAVIGATION_LINKS = [
   {title: "HomePage", href: "/"},
   {title: "AI", href: "/category=ai"},
@@ -16,7 +20,7 @@ export const STATIC_LINKS = [
 ]
 
 export const SOCIALS_LINKS = [
-  {svg: "src/shared/assets/icons/twitter.svg", href: 'https://twitter.com'},
-  {svg: "src/shared/assets/icons/tiktok.svg", href: 'https://tiktok.com'},
-  {svg: "src/shared/assets/icons/youtube.svg", href: 'https://youtube.com'},
+  {svg: twitterIcon, href: 'https://twitter.com'},
+  {svg: tiktokIcon, href: 'https://tiktok.com'},
+  {svg: youtubeIcon, href: 'https://youtube.com'},
 ]
