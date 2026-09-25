@@ -36,6 +36,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
         <title>NowaNews</title>
+        <link
+          rel="icon"
+          href="src/shared/assets/icons/favicon.png"
+        />
       </head>
       <body>
         <Header />

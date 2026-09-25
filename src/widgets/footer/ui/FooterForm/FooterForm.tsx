@@ -7,7 +7,7 @@ const FooterForm = () => {
       <h3 className="font-semibold text-black text-[16px] p-1">Subscribe to news</h3>
       <label className="w-3/4" htmlFor={"subscription-input"}>Subscribe to receive the most interesting news via email!</label>
       <input
-        className="p-3 border-2 border-gray-400 rounded-xl self-stretch"
+        className="p-3 border-2 border-gray-400 rounded-xl self-stretch outline-pink-400"
         id="subscription-input"
         type="email"
         name="subscription-email"
