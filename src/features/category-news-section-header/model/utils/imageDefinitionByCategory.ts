@@ -1,9 +1,9 @@
 import type {Categories} from "~/entities/article";
 import aiIcon from '/src/shared/assets/icons/brain.png'
-import businessIcon from '/src/shared/assets/icons/brain.png'
-import cultureIcon from '/src/shared/assets/icons/brain.png'
-import entertainmentIcon from '/src/shared/assets/icons/brain.png'
-import healthIcon from '/src/shared/assets/icons/brain.png'
+import businessIcon from '/src/shared/assets/icons/business.png'
+import cultureIcon from '/src/shared/assets/icons/culture.png'
+import entertainmentIcon from '/src/shared/assets/icons/entertainment.png'
+import healthIcon from '/src/shared/assets/icons/health.png'
 
 export function imageDefinitionByCategory(category: Categories) {
   switch (category) {

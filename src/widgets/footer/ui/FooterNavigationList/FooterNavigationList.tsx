@@ -6,7 +6,7 @@ const FooterNavigationList = ({linksArray}: {linksArray: FooterLink[]}) => {
   return (
     <nav className="flex flex-col gap-2">
       {linksArray.map((link) => (
-        <Link key={link.href} to={link.href}>{link.title}</Link>
+        <Link className="hover:opacity-70" key={link.href} to={link.href}>{link.title}</Link>
       ))}
     </nav>
   );
