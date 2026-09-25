@@ -14,7 +14,7 @@ const NewsCategoryCard = ({ src, imageUrl, title, publishedAt }: NewsCardProps )
         <img
           onLoad={() => setImageLoaded(true)}
           onError={() => setImageLoaded(false)}
-          className="object-cover w-60 h-30 xl:h-40 xl:w-80 aspect-2/1 rounded-2xl"
+          className="object-cover w-1/3 h-30 sm:w-60 xl:h-40 xl:w-80 aspect-2/1 rounded-2xl"
           src={checkIfImageLoaded(imageLoaded, imageUrl)}
           alt="News image"
           width="320"
