@@ -6,13 +6,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
-
 import "./app.css";
 import React from "react";
 import type {Route} from "../../.react-router/types/src/app/+types/root";
 import {Header} from "~/widgets/header";
 import {Footer} from "~/widgets/footer";
+import favicon from "/src/shared/assets/icons/favicon.png"
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -38,7 +37,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <title>NowaNews</title>
         <link
           rel="icon"
-          href="src/shared/assets/icons/favicon.png"
+          href={favicon}
         />
       </head>
       <body>

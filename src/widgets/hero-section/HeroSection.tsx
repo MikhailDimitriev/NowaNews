@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useNewsListStore } from "~/entities/recent-news/model/store/useNewsListStore";
 import {RecentNews} from "~/entities/recent-news";
+import loading from "/src/shared/assets/icons/loading.gif"
 
 const HeroSection = () => {
   const { isLoading, errorMessage, newsFetch } = useNewsListStore()
@@ -15,7 +16,7 @@ const HeroSection = () => {
         <div className="flex justify-center">
           <img
             className="text-center"
-            src="/src/shared/assets/icons/loading.gif"
+            src={loading}
             alt=""
             width={"100"}
             height={"100"}
