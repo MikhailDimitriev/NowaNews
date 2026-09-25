@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useLocation} from "react-router";
 import Logo from "~/shared/ui/Logo";
 import type {Categories} from "~/entities/article";
@@ -14,12 +14,16 @@ const Header = () => {
 
   const category = currentPath.split('').slice(10).join('') as Categories
 
+  useEffect(() => {
+    setBurgerMenuClick(false)
+  }, [currentPath]);
+
   return (
-    <header className="inline-padding dark-mode-bg-alt bg-white shadow-sm py-4 xl:py-2">
-      <div className="flex justify-between items-center gap-4">
+    <header className="inline-padding dark-mode-bg-alt bg-white shadow-sm py-4 xl:py-2 sticky top-0 z-1000">
+      <div className="flex justify-between items-center gap-3 sm:gap-4">
         <Logo />
         <HeaderNavigation position='header' />
-        <div className="flex flex-row items-center gap-12">
+        <div className="flex flex-row items-center gap-3 sm:gap-6 md:gap-8">
 
           <Search category={category}/>
 

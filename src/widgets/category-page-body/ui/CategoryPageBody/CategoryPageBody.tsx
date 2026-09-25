@@ -21,7 +21,7 @@ const CategoryPageBody = ({store, category}: {store: () => NewsStore, category: 
       {!isNewNewsLoading && (
         <Button
           style={{
-            width: "25%",
+            width: "40%",
             fontSize: "1.25rem",
           }}
           onClick={() => newsCountIncrement(category)}

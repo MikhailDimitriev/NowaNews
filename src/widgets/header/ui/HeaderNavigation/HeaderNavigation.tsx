@@ -3,7 +3,11 @@ import {
   NAVIGATION_LINKS
 } from "~/widgets/header/model/constants/navigationsLinks";
 
-const HeaderNavigation = ({ position }: { position: 'header' | 'burger-menu'} ) => {
+interface HeaderNavigationProps {
+  position: 'header' | 'burger-menu'
+}
+
+const HeaderNavigation = ({ position }: HeaderNavigationProps ) => {
 
   return (
     <nav className={`${position === 'header' ?

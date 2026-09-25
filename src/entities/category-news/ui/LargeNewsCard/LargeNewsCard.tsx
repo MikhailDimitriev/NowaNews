@@ -13,14 +13,14 @@ const LargeNewsCard = ({ imageUrl, src, title, description }: LargeNewsProps) =>
   return (
       <div
         style={checkIfBackgroundImageLoaded(imageLoaded, imageUrl)}
-        className="h-full flex flex-col justify-between items-start gap-4 aspect-square p-8 bg-cover bg-center rounded-2xl"
+        className="h-full flex flex-col justify-between items-start gap-4 aspect-square p-4 md:p-8 bg-cover bg-center rounded-2xl"
       >
         <OpenOriginalLink
           src={src}
         />
         <div className="flex flex-col gap-2">
-          <h2 className="large-news-text text-overflow-3 font-bold text-2xl">{title}</h2>
-          <p className="large-news-text text-overflow-3 text-[16px]">{description}</p>
+          <h2 className="large-news-text text-overflow-3 font-bold text-2xl text-balance">{title}</h2>
+          <p className="large-news-text text-overflow-3 text-[16px] text-balance">{description}</p>
         </div>
       </div>
   );

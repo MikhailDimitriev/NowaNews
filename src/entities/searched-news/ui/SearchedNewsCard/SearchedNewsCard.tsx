@@ -17,7 +17,7 @@ const SearchedNewsCard = ( { src, title, imageUrl }: {src: string, title: string
         height="100"
         loading="lazy"
       />
-      <p className="font-bold text-overflow-3">{title}</p>
+      <p className="font-bold text-overflow-3 text-balance">{title}</p>
     </Link>
   );
 };

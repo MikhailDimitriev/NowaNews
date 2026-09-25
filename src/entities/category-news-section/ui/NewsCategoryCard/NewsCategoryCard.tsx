@@ -20,7 +20,7 @@ const NewsCategoryCard = ({ src, imageUrl, title, publishedAt }: NewsCardProps )
           width="320"
         />
         <div className="w-100 flex flex-col justify-between gap-4">
-          <h3 className="font-semibold text-[clamp(1rem,0.96vw,1.125rem) text-overflow-3">
+          <h3 className="font-semibold text-[clamp(1rem,0.96vw,1.125rem) text-overflow-3 text-balance">
             {title}
           </h3>
           <p className="text-gray-500">{publishedAt}</p>
