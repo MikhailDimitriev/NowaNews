@@ -7,7 +7,14 @@ import {
 import {BASE_URL} from "~/shared/constants/api";
 
 export const getSearchedArticles = async (query: string, limit: number, category?: Categories): Promise<Article[]> => {
-  const response = await fetch(`${BASE_URL}/search?q=${query}&limit=${limit}${category ? `&category=${category}` : ``}`, {method: "GET"})
+  const response = await fetch(
+    `${BASE_URL}/search?q=${query}&limit=${limit}${category ? `&category=${category}` : ``}`,
+    {
+      method: "GET",
+      headers: {
+        "Authorization": "Bearer nk_iJLbsAqKQx6x3sisO5ZMxfcdnX9-rEdbvTpFMI0BEjE",
+      }
+    })
 
   if(!response.ok) throw new Error("Failed to fetch data.")
 

@@ -2,7 +2,14 @@ import {BASE_URL} from "~/shared/constants/api"
 import {type Article, type DataFetch, mapArticleDTO} from "~/entities/article";
 
 export const getAllCategoriesArticles = async (): Promise<Article[]> => {
-  const response = await fetch(`${BASE_URL}/articles?limit=5`, {method: "GET"})
+  const response = await fetch(
+    `${BASE_URL}/articles?limit=5`,
+    {
+      method: "GET",
+      headers: {
+        "Authorization": "Bearer nk_iJLbsAqKQx6x3sisO5ZMxfcdnX9-rEdbvTpFMI0BEjE",
+      }
+    })
 
   if(!response.ok) throw new Error("Failed to fetch data.")
 

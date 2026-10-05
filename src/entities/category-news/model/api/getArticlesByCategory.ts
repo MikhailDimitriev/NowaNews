@@ -5,7 +5,15 @@ import {
 } from "~/entities/article";
 
 export const getArticlesByCategory = async (category: Categories, limit: number): Promise<Article[]> => {
-  const response = await fetch(`${BASE_URL}/articles?category=${category}&limit=${limit}`, {method: "GET"})
+  const response = await fetch(
+    `${BASE_URL}/articles?category=${category}&limit=${limit}`,
+    {
+      method: "GET",
+      headers: {
+        "Authorization": "Bearer nk_iJLbsAqKQx6x3sisO5ZMxfcdnX9-rEdbvTpFMI0BEjE",
+      }
+    }
+  )
 
   if(!response.ok) throw new Error("Failed to fetch data.")
 

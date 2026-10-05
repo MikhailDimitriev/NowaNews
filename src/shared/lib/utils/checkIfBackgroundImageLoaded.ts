@@ -1,5 +1,5 @@
 import type {CSSProperties} from "react";
-import {replaceImage} from "~/shared/constants/replaceNewsImage";
+import replaceImage from "~/shared/assets/icons/imageNotLoaded.png"
 
 export const checkIfBackgroundImageLoaded = (imageLoaded: boolean, imageUrl: string): CSSProperties => {
 

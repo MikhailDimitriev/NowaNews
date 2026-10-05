@@ -1,1 +1,0 @@
-export const replaceImage = `https://testonjob.ru/wp-content/uploads/2020/04/analiz-informacii-test-min-1024x597.png`
